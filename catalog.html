@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/catalog.css">
+    <link rel="shortcut icon" href="assets/media/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="functional.js"></script>
+    <title>TatarStar</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header> 
+        <div class="header-block section">
+
+            <a href="#openModal"><img class="basket-img" src="assets/media/catalog/header/basket.png" alt=""></a>
+
+            <!-- <i class="fa-solid fa-bars" style="color: #ffffff;"></i> -->
+
+            <div class="header-logo">
+                <a href="index.html"><img src="assets/media/catalog/header/logo.png" alt=""></a>
+            </div>
+            
+            <input type="checkbox" name="" id="burger">
+            <label for="burger"></label>
+
+            <div class="header-nav">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="#">Новинки</a>
+                <a href="#footer-contacts">Контакты</a>
+            </div>
+
+            <div class="header-icons">
+                <a href="#openModal"><img src="assets/media/catalog/header/basket.png" alt=""></a>
+                <a href="#"><img src="assets/media/catalog/header/user.png" alt=""></a>
+            </div>
+
+        </div>
+    </header>
+    <!-- header end -->
+
+    <hr class="section">
+
+    <!-- chlebnie-kroshki start -->
+    <div class="chlebnie-kroshki section">
+
+        <div class="chlebnie-kroshki-block">
+            <a href="index.html">Главная</a>
+            <p>/</p>
+            <a href="catalog.html">Каталог</a>
+        </div>
+
+    </div>
+    <!-- chlebnie-kroshki end -->
+
+    <!-- catalog start -->
+    <div class="catalog section py-100">
+        <div class="catalog-block">
+
+            <div class="title">
+                <h2>Каталог</h2>
+                <h3>393 товаров</h3>
+            </div>
+
+            <div class="catalog-content">
+
+                <div class="filter">
+
+                    <div class="filter-block">
+
+                        <select id="category-filter">
+                            <option value="">ОДЕЖДА</option>
+                            <option value="">Футболки</option>
+                            <option value="">Шорты</option>
+                            <option value="">Купальники</option>
+                            <option value="">Головные уборы</option>
+                            <option value="">Платья</option>
+                            <option value="">Кофта</option>
+                            <option value="">Капри</option>
+                            <option value="">Куртки</option>
+                            <option value="">Рубашки</option>
+                        </select>
+
+                        <select id="brand-filter">
+                            <option value="">БРЕНДЫ</option>
+                            <option value="Nike">Nike</option>
+                            <option value="Adidas">Adidas</option>
+                            <option value="H&M">H&M</option>
+                            <option value="Bershka">Bershka</option>
+                            <option value="Next">Next</option>
+                            <option value="Zara">Zara</option>
+                            <option value="Louis Viton">Louis Viton</option>>
+                        </select>
+
+                        <select id="size-filter">
+                            <option value="">РАЗМЕРЫ</option>
+                            <option value="XS">XS</option>
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+
+                        <select id="season-filter">
+                            <option value="">СЕЗОНЫ</option>
+                            <option value="summer">Лето</option>
+                            <option value="winter">Зима</option>
+                            <option value="autumn">Осень</option>
+                            <option value="spring">Весна</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="filter-mobile">
+                    <div class="block-filter">
+                        <img src="assets/media/catalog/catalog_block/filter.png" alt="">
+                        <p>Фильтр</p>
+                    </div>
+                </div>
+
+                <div class="sort">
+                    <label for="sort">Сортировка: </label>
+                    <select id="sort">
+                        <option value="popularity">По популярности</option>
+                        <option value="popularity">По популярности</option>
+                        <option value="price">По цене</option>
+                        <option value="name">По наименованию</option>
+                    </select>
+                </div>
+
+                <div class="sort-mobile">
+                    <div class="block-sort">
+                        <p>Сортировка:</p>
+                        <img src="assets/media/catalog/catalog_block/sort.png" alt="">
+                    </div>
+                </div>
+
+                <div class="sourch">
+                    <input type="text" placeholder="Поиск">
+                    <img src="assets/media/catalog/catalog_block/sourch.png" alt="">
+                </div>
+            </div>
+
+            <div class="catalog-cards">
+
+                <div class="catalog-card-one ">
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card1.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Платье</h4>
+                                <p class="text-attr-p">5 000 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card2.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Платье</h4>
+                                <p class="text-attr-p">8 000 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card3.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Платье</h4>
+                                <p class="text-attr-p">4 600 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+                    </div>
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card4.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Платье</h4>
+                                <p class="text-attr-p">6 500 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="catalog-card-one">
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card5.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Платье</h4>
+                                <p class="text-attr-p">5 400 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card6.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Платье</h4>
+                                <p class="text-attr-p">6 500 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card7.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Платье</h4>
+                                <p class="text-attr-p">3 200 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card8.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr text-mobile-attr">
+                                <h4>Костюм</h4>
+                                <p class="text-out-off-stock">Нет в наличии</p>
+
+                            </div><a href="" class="btn-out-of-stock">Нет в наличии</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="catalog-card-one">
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card9.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Рубашка</h4>
+                                <p class="text-attr-p">2 300 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card10.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr text-mobile-attr">
+                                <h4>Костюм</h4>
+                                <p class="text-out-off-stock">Нет в наличии</p>
+
+                            </div><a href="" class="btn-out-of-stock">Нет в наличии</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card11.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Костюм</h4>
+                                <p class="text-attr-p">8 900 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card12.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Брюки</h4>
+                                <p class="text-attr-p">3 800 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="catalog-card-one">
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card13.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr text-mobile-attr">
+                                <h4>Блузка</h4>
+                                <p class="text-out-off-stock">Нет в наличии</p>
+
+                            </div><a href="" class="btn-out-of-stock">Нет в наличии</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card14.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Куртка</h4>
+                                <p class="text-attr-p">8 599 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card15.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Цепочка</h4>
+                                <p class="text-attr-p">1 200 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+
+                    </div>
+
+                    <div class="catalog-card">
+                        <img src="assets/media/catalog/cards/heart.png" class="heart" alt="">
+                        <a href="card.html"><img src="assets/media/catalog/cards/card16.png" alt=""></a>
+
+                        <div class="card-text">
+                            <h3>Daniela Drei</h3>
+
+                            <div class="text-attr">
+                                <h4>Комбез</h4>
+                                <p class="text-attr-p">3 000 ₽ </p>
+
+                            </div><a href="" class="btn-card-basket">Добавить в корзину</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="btn-more">
+                    <a href="" class="btn-card-basket">Посмотреть еще</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- catalog end -->
+
+    <!-- modal start -->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <a href="#close" title="Close" class="close">×</a>
+                    <h3 class="modal-title">Ваша корзина</h3>
+
+                </div>
+                <div class="modal-body">
+                    <!-- <p>Содержимое модального окна...</p> -->
+                    <div class="item-modal">
+
+                        <hr class="modal-hr">
+
+                        <div class="tovar-modal">
+                            <div class="img-opicanie">
+                                <img src="assets/media/basket/dress.png" alt="">
+                                <div class="text-tovar">
+                                    <div class="text-tovar-flex">
+                                        <h4>Платье</h4>
+                                        <p>3 500 ₽</p>
+                                    </div>
+
+
+                                    <div class="opisanie-text">
+                                        <div class="h5-text">
+                                            <h5>Размер</h5>
+                                            <h5>Цвет</h5>
+                                            <h5>Артикул</h5>
+                                            <h5>Количество</h5>
+                                        </div>
+                                        <div class="h5-text">
+                                            <h5>S</h5>
+                                            <h5>Черный</h5>
+                                            <h5>dr05286</h5>
+                                            <h5>2</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="price-basket">
+                            <p>Итого</p>
+                            <h3>7 000 ₽</h3>
+                        </div>
+
+                        <div class="button-zakaz">
+                            <a href="">Оформить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal end -->
+
+    <!-- footer start -->
+    <footer class="section">
+        <div class="footer-block">
+
+            <div class="footer-nav">
+                <h3>Навигация</h3>
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">Новинки</a>
+                <a href="#">Контакты</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Мы в социальных сетях</h3>
+                <div class="social-icons">
+                    <a href="https://web.telegram.org/"><img src="assets/media/index/footer/tg.png" alt=""></a>
+                    <a href="https://web.whatsapp.com/"><img src="assets/media/index/footer/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="footer-contacts" id="footer-contacts">
+                <h3>Контакты</h3>
+
+                <a href="tel:8(800)1012602">8 (800) 101-26-02</a>
+                <a href="">г. Казань, Калинина, 37</a>
+            </div>
+
+            <div class="footer-forma">
+
+                <form>
+                    <h3>Остались вопросы: <br> Заполните форму, мы свяжемся с вами</h3>
+
+                    <div class="input">
+                        <label>Номер телефона <span>*</span></label>
+                        <input type="text" placeholder="введите номер телефона">
+                        <label>Имя <span>*</span></label>
+                        <input type="text" placeholder="введите имя">
+                    </div>
+
+                    <a href="" class="btn-form">Отправить данные</a>
+
+                    <p>Отправляя данные, вы соглашаетесь с условиями <br> <span class="polit"> Политики
+                            конфиденциальности</span></p>
+                </form>
+
+            </div>
+        </div>
+
+        <h4>© 2024 TatarStar</h4>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
